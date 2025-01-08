@@ -1,6 +1,9 @@
 <?php
 
+use App\Models\barang;
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/post', function () {
+//     $post = Post::all();
+//     return view('tampil_post',compact('post'));
+// });
+
+// Route::get('/barang', function () {
+//     $barang = barang::where('nama_barang','LIKE','%Wajan%')->get();
+//     return view('tapil_barang',compact('barang'));
+// });
+
+Route::get('/post',[PostController::class, 'menampilkan']);
+Route::get('/barang',[PostController::class, 'menampilkan2']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
