@@ -5,6 +5,7 @@ use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\SiswasController;
+use App\Http\Controllers\PpdbsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,3 +40,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('siswa', SiswasController::class);
+Route::resource('ppdb', PpdbsController::class);
+
