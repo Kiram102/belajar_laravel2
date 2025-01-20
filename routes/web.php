@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\SiswasController;
 use App\Http\Controllers\PpdbsController;
+use App\Http\Controllers\PenggunasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +42,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('siswa', SiswasController::class);
 Route::resource('ppdb', PpdbsController::class);
-
+Route::resource('penggunas',PenggunasController::class);
