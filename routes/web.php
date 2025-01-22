@@ -7,6 +7,13 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\SiswasController;
 use App\Http\Controllers\PpdbsController;
 use App\Http\Controllers\PenggunasController;
+use App\Http\Controllers\TeleponController;
+use App\Http\Controllers\ProduksController;
+use App\Http\Controllers\KategorisController;
+use App\Http\Controllers\ProdutsController;
+use App\Http\Controllers\CustomersController;
+use App\Http\Controllers\OrdersController;
+use App\Models\Order;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,3 +50,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('siswa', SiswasController::class);
 Route::resource('ppdb', PpdbsController::class);
 Route::resource('penggunas',PenggunasController::class);
+Route::resource('telepon',TeleponController::class);
+Route::resource('kategori',KategorisController::class);
+Route::resource('produk',ProduksController::class);
+Route::resource('product',ProdutsController::class);
+Route::resource('customer',CustomersController::class);
+Route::resource('order',OrdersController::class);
+
+
