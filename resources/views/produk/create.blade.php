@@ -33,6 +33,11 @@
                             <input type="number" class="form-control" name="stok" style="width: 20%;">
                             <br>
                         </div>
+                        <div class="form-group">
+                            <label for="">Cover</label>
+                            <input type="file" class="form-control" name="cover" required>
+                            <br>
+                        </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>

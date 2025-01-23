@@ -41,6 +41,15 @@ class ProdutsController extends Controller
         $product->merk = $request->merk;
         $product->price = $request->price;
         $product->stock = $request->stock;
+
+        
+        if ($request->hasFile('cover')) {
+            $img = $request->file('cover');
+            $name = rand(1000,9999).$img->getClientOriginalName();
+            $img->move('images/product',$name);
+            $product->cover = $name;
+        }
+
         $product->save();
         session()->flash('succes','Data Berhasil Ditambahkan');
         return redirect()->route('product.index');
@@ -84,6 +93,15 @@ class ProdutsController extends Controller
         $product->merk = $request->merk;
         $product->price = $request->price;
         $product->stock = $request->stock;
+
+        if ($request->hasFile('cover')) {
+            $product -> deleteImage();
+            $img = $request->file('cover');
+            $name = rand(1000,9999).$img->getClientOriginalName();
+            $img->move('images/product',$name);
+            $product->cover = $name;
+        }
+
         $product->save();
         session()->flash('succes','Data Berhasil Diubah');
         return redirect()->route('product.index');

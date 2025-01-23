@@ -29,6 +29,11 @@
                             <input type="number" class="form-control" name="stock" style="width: 25%;">
                             <br>
                         </div>
+                        <div class="form-group">
+                            <label for="">Cover</label>
+                            <input type="file" class="form-control" name="cover" required>
+                            <br>
+                        </div>
                         <button type="submit" class="btn btn-primary">Tambah</button>
                     </form>
                 </div>

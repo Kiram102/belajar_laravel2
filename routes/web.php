@@ -40,6 +40,7 @@ Route::get('/', function () {
 //     return view('tapil_barang',compact('barang'));
 // });
 
+
 Route::get('/post',[PostController::class, 'menampilkan']);
 Route::get('/barang',[PostController::class, 'menampilkan2']);
 

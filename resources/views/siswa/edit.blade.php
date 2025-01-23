@@ -17,16 +17,16 @@
                         </div>
                         <div class="form-group">
                             <label for="">Nama</label>
-                            <input type="text" class="form-control" name="nama"  value="{{$siswa->nama}}">
+                            <input type="text" class="form-control" name="nama" value="{{$siswa->nama}}">
                             <br>
                         </div>
                         <div class="form-group">
                             <label for="">Jenis Kelamin</label>
                             <br>
-                             <input type="radio" name="jk" id="" value="Laki-Laki">
-                             Laki-Laki
-                             <input type="radio" name="jk" id="" value="Perempuan">
-                             Perempuan
+                            <input type="radio" name="jk" id="" value="Laki-Laki">
+                            Laki-Laki
+                            <input type="radio" name="jk" id="" value="Perempuan">
+                            Perempuan
                             <br>
                         </div>
                         <div class="form-group">
@@ -38,6 +38,11 @@
                             </select>
                             <br>
                         </div>
+                        <td>
+                        <label for="">cover</label>
+                            <img src="{{asset('/images/siswa/'.$siswa->cover)}}" alt="" width="100">
+                            <input type="file" class="form-control" name="cover">
+                        </td>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>

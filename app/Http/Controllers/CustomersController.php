@@ -37,9 +37,7 @@ class CustomersController extends Controller
      */
     public function store(Request $request)
     {
-        $validate = $request->validate([
-            'contact' => 'required|digits:12',
-        ]);
+      
         $customer = new Customer();
         $customer->nama_customer = $request->nama;
         $customer->gender = $request->gender;

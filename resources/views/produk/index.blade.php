@@ -24,6 +24,7 @@
                                 <th scope="col">Harga</th>
                                 <th scope="col">Stok</th>
                                 <th scope="col">Id Kategori</th>
+                                <th scope="col">Cover</th>
                                 <th scope="col">Edit</th>
                         </thead>
                         <tbody>
@@ -35,6 +36,9 @@
                                 <td>{{$data->harga}}</td>
                                 <td>{{$data->stok}}</td>
                                 <td>{{$data->kategoris->nama_kategori}}</td>
+                                <td>
+                                    <img src="{{asset('/images/produk/'.$data->cover)}}" alt="" width="100">
+                                </td>
                                 <td>
                                     <div class="btn-group" role="group" aria-label="Basic example">
 

@@ -17,7 +17,7 @@
                     </div>
 
                     <table class="table">
-                        <thead>
+                        <thead class=" bg-primary-subtle">
                             <tr>
                                 <th scope="col">No</th>
                                 <th scope="col">Id Product</th>

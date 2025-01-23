@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('harga');
             $table->integer('stok');
             $table->unsignedBigInteger('id_kategori');
+            $table->string('cover');
             $table->timestamps();
         });
     }

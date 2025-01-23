@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
-            <div class="card" style="width: 80%;left: 80px;">
+            <div class="card" style="width: 100%;right: 20px;">
                 <div class="card-header">Data Product</div>
 
                 <div class="card-body">
@@ -24,6 +24,7 @@
                                 <th scope="col">Merk</th>
                                 <th scope="col">Price</th>
                                 <th scope="col">Stock</th>
+                                <th scope="col">Cover</th>
                                 <th scope="col">Edit</th>
                         </thead>
                         <tbody>
@@ -35,6 +36,9 @@
                                 <td>{{$data->merk}}</td>
                                 <td>{{$data->price}}</td>
                                 <td>{{$data->stock}}</td>
+                                <td>
+                                    <img src="{{asset('/images/product/'.$data->cover)}}" alt="" width="100">
+                                </td>
                                 <td>
                                     <div class="btn-group" role="group" aria-label="Basic example">
 

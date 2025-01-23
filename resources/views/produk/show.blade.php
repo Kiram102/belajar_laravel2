@@ -34,6 +34,11 @@
                             <input type="number" class="form-control" name="stok" style="width: 20%;" value="{{$produk->stok}}" disabled>
                             <br>
                         </div>
+                        <div class="form-group">
+                            <label for="">Cover</label>
+                            <img src="{{asset('/images/produk/'.$produk->cover)}}" alt="" width="100">
+                            <br><br>
+                        </div>
                         <a href="{{route('produk.index')}}" class="btn btn-primary">Back</a>
                     </form>
                 </div>

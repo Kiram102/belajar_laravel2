@@ -30,7 +30,14 @@
                             <input type="number" class="form-control" name="stock" style="width: 25%;" value="{{$product->stock}}">
                             <br>
                         </div>
-                        <button type="submit" class="btn btn-primary">Tambah</button>
+                        <div class="form-group">
+                            <label for="">Cover</label>
+                            <img src="{{asset('/images/product/'.$product->cover)}}" alt="" width="100">
+                            <br><br>
+                            <input type="file" class="form-control" name="cover" required>
+                            <br>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Edit</button>
                     </form>
                 </div>
             </div>

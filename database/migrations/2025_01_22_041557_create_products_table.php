@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('merk');
             $table->string('price');
             $table->string('stock');
+            $table->string('cover');
             $table->timestamps();
         });
     }
