@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BukusController;
 use App\Models\barang;
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
@@ -13,6 +14,10 @@ use App\Http\Controllers\KategorisController;
 use App\Http\Controllers\ProdutsController;
 use App\Http\Controllers\CustomersController;
 use App\Http\Controllers\OrdersController;
+use App\Http\Controllers\PenerbitsController;
+use App\Http\Controllers\GenresController;
+use App\Http\Controllers\PembelisController;
+use App\Http\Controllers\TransaksisController;
 use App\Models\Order;
 
 /*
@@ -57,5 +62,11 @@ Route::resource('produk',ProduksController::class);
 Route::resource('product',ProdutsController::class);
 Route::resource('customer',CustomersController::class);
 Route::resource('order',OrdersController::class);
+Route::resource('penerbit',PenerbitsController::class);
+Route::resource('genre',GenresController::class);
+Route::resource('buku',BukusController::class);
+Route::resource('pembeli',PembelisController::class);
+Route::resource('transaksi',TransaksisController::class);
+
 
 

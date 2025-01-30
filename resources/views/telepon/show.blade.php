@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Tambah Data Siswa</div>
+                <div class="card-header">Tampilkan Data Siswa</div>
                 <div class="card-body">
                     <form action="{{ route('telepon.update', ['telepon' => $telepon->id]) }}" method="post" enctype="multipart/form-data">
                         @csrf
